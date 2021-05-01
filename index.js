@@ -15,7 +15,9 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-
+app.get('/', (req,res)=>{
+    res.send('working')
+})
 
 
 const serviceAccount = require("./configs/burj-al-arab-f756d-firebase-adminsdk-vnla2-6d3e40ba52.json");
